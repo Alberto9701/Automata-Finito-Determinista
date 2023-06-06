@@ -1,0 +1,29 @@
+<!--
+<app-entrada #miEntrada></app-entrada>
+-->
+<h1>Banda de entrada</h1>
+<div style="display: flex;">
+  <div *ngFor="let letra of this.arreglo ; let i = index">
+    <div style="display: flex;" *ngIf="valido===true">
+
+      <div style="display: block;">
+        <h2>{{letra}}</h2>
+        <div *ngIf="i === this.arreglo.length-1; else otraFlecha">
+          <i class="pi pi-arrow-up"></i>
+        </div>
+
+        <ng-template #otraFlecha>
+          <p></p>
+        </ng-template>
+
+      </div>
+
+      <p-divider layout="vertical"></p-divider>
+    </div>
+
+  </div>
+</div>
+
+<!--
+<button (click)="impresion()">boton</button>
+-->

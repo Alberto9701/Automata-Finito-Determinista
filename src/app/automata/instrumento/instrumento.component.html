@@ -1,0 +1,47 @@
+<div style="display: flex; flex-direction:column; ">
+
+  <div style="display: flex; flex-direction:column; justify-content: center; align-items:center;">
+    <div class="mi-circulo"> <h1 style="text-align: center;">*q0</h1></div>
+  </div>
+
+
+  <div style="display:flex; justify-content: space-between; margin-top:5rem; margin-bottom:5rem">
+    <div class="mi-circulo"> <h1 style="text-align: center;">q1</h1></div>
+    <div class="mi-circulo"> <h1 style="text-align: center;">*q2</h1></div>
+  </div>
+
+  <!--Flecha que indica el estado actual-->
+  <div style="display: flex; flex-direction:column; justify-content: center; align-items:center;">
+
+    <div *ngIf="this.edo===0">
+      <i class="pi pi-arrow-up" style="color: cornflowerblue; font-size:5rem"></i>
+    </div>
+
+    <div *ngIf="this.edo===1">
+      <i class="pi pi-arrow-up-left" style="color: cornflowerblue; font-size:5rem"></i>
+    </div>
+
+    <div *ngIf="this.edo===2">
+      <i class="pi pi-arrow-up-right" style="color: cornflowerblue; font-size:5rem"></i>
+    </div>
+
+    <div *ngIf="this.edo===3">
+      <i class="pi pi-arrow-down-left" style="color: cornflowerblue; font-size:5rem"></i>
+    </div>
+
+    <div *ngIf="this.edo===4">
+      <i class="pi pi-arrow-down-right" style="color: cornflowerblue; font-size:5rem"></i>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div style="display:flex; justify-content: space-between; margin-top:5rem; margin-bottom:5rem">
+    <div class="mi-circulo"> <h1 style="text-align: center;;">*q3</h1></div>
+    <div class="mi-circulo"> <h1 style="text-align: center; margin-bottom: 0%;">q4</h1> <p style="text-align:center; font-size:1.4rem; color:red; margin-top: 0%;">error</p> </div>
+  </div>
+
+</div>

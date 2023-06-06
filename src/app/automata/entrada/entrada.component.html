@@ -1,0 +1,21 @@
+<input type="text" pInputText [(ngModel)]="value" style="border-color: white;" (input)="comprobar()" />
+
+
+
+<div *ngIf="valido===false">
+  <h2 style="color:red">Cadena no válida</h2>
+</div>
+
+<app-banda [arreglo]="arreglo" [valido]="valido"></app-banda>
+
+<div style="width: 50%; margin-top: 3rem">
+  <div>
+    <app-instrumento [edo]="edo"></app-instrumento>
+  </div>
+
+</div>
+
+
+
+
+
